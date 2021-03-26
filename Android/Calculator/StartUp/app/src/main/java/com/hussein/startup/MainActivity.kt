@@ -85,7 +85,33 @@ class MainActivity : AppCompatActivity() {
         etShowNumber.setText(finalNumber.toString())
         isNewOp=true
     }
+    
+    
+    
 
+    fun buEquaasdlEvent(view:View){
+        val newNumber=etShowNumber.text.toString()
+        var finalNumber:Double?=null
+        when(op){
+
+            "*"->{
+                finalNumber=  oldNumber.toDouble() *newNumber.toDouble()
+            }
+            "/"->{
+                finalNumber=  oldNumber.toDouble() /newNumber.toDouble()
+            }
+            "+"->{
+                finalNumber=  oldNumber.toDouble()+newNumber.toDouble()
+            }
+            "-"->{
+                finalNumber=  oldNumber.toDouble() *newNumber.toDouble()
+            }
+        }
+        etShowNumber.setText(finalNumber.toString())
+        isNewOp=true
+    }
+    
+    
     fun buPercent(view:View){
         val number:Double=etShowNumber.text.toString().toDouble()/100
 
