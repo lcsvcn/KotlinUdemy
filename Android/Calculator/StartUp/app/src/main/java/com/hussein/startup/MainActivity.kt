@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
                 buClickValue+="0"
 
             }
+            // TODO comentario
             bu1.id->{
                 buClickValue+="1"
             }
@@ -61,39 +62,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         etShowNumber.setText(buClickValue)
-    }
-
-
-var op="*"
-var oldNumber=""
-var isNewOp=true
-    fun buOpEevent(view:View){
-
-        val buSelect= view as Button
-        when(buSelect.id) {
-            buMul.id -> {
-
-                op="*"
-
-
-            }
-            buDiv.id -> {
-
-                op="/"
-            }
-            buSub.id -> {
-
-
-                op="-"
-            }
-            buSum.id -> {
-
-                op="+"
-            }
-
-        }
-        oldNumber=etShowNumber.text.toString()
-        isNewOp=true
     }
 
     fun buEqualEvent(view:View){
